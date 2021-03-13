@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: functionalUnit-management-graphql-Ms
+
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: octopus
+
+
+
+
+server:
+  servlet:
+    context-path: /workUnitManagement/v1
+  http2:
+    enabled: true
+  port: 8085
