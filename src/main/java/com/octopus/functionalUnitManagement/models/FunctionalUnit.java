@@ -3,8 +3,11 @@ package com.octopus.functionalUnitManagement.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "com.octopus.functionalUnit.workUnit")
 public class FunctionalUnit {
     @Id
